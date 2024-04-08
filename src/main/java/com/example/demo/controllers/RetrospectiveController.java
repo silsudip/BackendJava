@@ -57,6 +57,7 @@ public class RetrospectiveController {
 
     @GetMapping
     public Collection<Retrospective> searchRetrospectives() {
+        System.out.println(retrospectives.toString());
         return retrospectives.values();
     }
 }
